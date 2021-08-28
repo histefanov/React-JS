@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: orange;
+}
+
+.booklist {
+  display: grid;
+  gap: 2rem;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 3rem auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book {
+  border-radius: 1rem;
+  background: #fff;
+  padding: 1rem;
+}
+
+.cover {
+  display: block;
+  margin: auto;
+}
+
+.title {
+  font-size: 14pt;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
+.author {
+  text-align: right;
+  font-size: 10pt;
+  color: #444;
+}
